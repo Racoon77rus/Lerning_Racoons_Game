@@ -797,10 +797,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 47b24aa9-0551-4097-b3a8-97c6a338c363
+  cloudProjectId: cc4dc388-ef60-4a78-9f9a-eb540cea4cec
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project
+  projectName: Dragon_Game
   organizationId: racoon07-mail-ru
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

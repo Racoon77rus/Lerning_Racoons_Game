@@ -1,0 +1,4 @@
+repository "Dragon_Game@CWSStudio@cloud"
+  path "/"
+    br "/main"
+    co "/main"
