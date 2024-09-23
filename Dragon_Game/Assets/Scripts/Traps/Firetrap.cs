@@ -11,8 +11,8 @@ public class Firetrap : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRend;
 
-    private bool triggered; //when the trap gets triggered
-    private bool active; //when the trap is active and can hurt the player
+    private bool triggered; //Когда ловушка срабатывает
+    private bool active; //Когда ловушка активна и может нанести урон игроку
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class Firetrap : MonoBehaviour
         spriteRend = GetComponent<SpriteRenderer>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //Если столкновение происходит с объектом с тегом «Player»
     {
         if (collision.tag == "Player")
         {
@@ -33,17 +33,17 @@ public class Firetrap : MonoBehaviour
     }
     private IEnumerator ActivateFiretrap()
     {
-        //turn the sprite red to notify the player and trigger the trap
+        // Покрасить спрайт в красный цвет, чтобы уведомить игрока и активировать ловушку
         triggered = true;
-        spriteRend.color = Color.red; 
+        spriteRend.color = Color.red;
 
-        //Wait for delay, activate trap, turn on animation, return color back to normal
+        //Подождать заданное время задержки, активировать ловушку, включить анимацию
         yield return new WaitForSeconds(activationDelay);
-        spriteRend.color = Color.white; //turn the sprite back to its initial color
+        spriteRend.color = Color.white; //Вернуть спрайту исходный цвет
         active = true;
         anim.SetBool("activated", true);
 
-        //Wait until X seconds, deactivate trap and reset all variables and animator
+        //Подождать X секунд, деактивировать ловушку и сбросить все переменные и настройки аниматора
         yield return new WaitForSeconds(activeTime);
         active = false;
         triggered = false;
