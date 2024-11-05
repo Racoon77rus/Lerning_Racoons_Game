@@ -1981,13 +1981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c26c5fd5ec8b984eba4307960dee492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  enemies: []
 --- !u!1 &4422607375138834318
 GameObject:
   m_ObjectHideFlags: 0

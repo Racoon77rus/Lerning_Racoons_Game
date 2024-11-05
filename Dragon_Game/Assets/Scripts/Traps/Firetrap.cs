@@ -11,8 +11,13 @@ public class Firetrap : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRend;
 
-    private bool triggered; //Когда ловушка срабатывает
-    private bool active; //Когда ловушка активна и может нанести урон игроку
+    private bool triggered; //when the trap gets triggered
+    private bool active; //when the trap is active and can hurt the player
+
+    private Health playerHealth;
+
+    [Header("Fire Sound")]
+    [SerializeField] private AudioClip fireSound;
 
     private void Awake()
     {
@@ -20,10 +25,18 @@ public class Firetrap : MonoBehaviour
         spriteRend = GetComponent<SpriteRenderer>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) //Если столкновение происходит с объектом с тегом «Player»
+    private void Update()
+    {
+        if (playerHealth != null && active)
+            playerHealth.TakeDamage(damage);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            playerHealth = collision.GetComponent<Health>();
+
             if (!triggered)
                 StartCoroutine(ActivateFiretrap());
 
@@ -31,19 +44,25 @@ public class Firetrap : MonoBehaviour
                 collision.GetComponent<Health>().TakeDamage(damage);
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+            playerHealth = null;
+    }
     private IEnumerator ActivateFiretrap()
     {
-        // Покрасить спрайт в красный цвет, чтобы уведомить игрока и активировать ловушку
+        //turn the sprite red to notify the player and trigger the trap
         triggered = true;
         spriteRend.color = Color.red;
 
-        //Подождать заданное время задержки, активировать ловушку, включить анимацию
+        //Wait for delay, activate trap, turn on animation, return color back to normal
         yield return new WaitForSeconds(activationDelay);
-        spriteRend.color = Color.white; //Вернуть спрайту исходный цвет
+        SoundManager.instance.PlaySound(fireSound);
+        spriteRend.color = Color.white; //turn the sprite back to its initial color
         active = true;
         anim.SetBool("activated", true);
 
-        //Подождать X секунд, деактивировать ловушку и сбросить все переменные и настройки аниматора
+        //Wait until X seconds, deactivate trap and reset all variables and animator
         yield return new WaitForSeconds(activeTime);
         active = false;
         triggered = false;

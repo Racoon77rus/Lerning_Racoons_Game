@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.46f1 (8e9b8558c41a) revision 9345925'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ru' Physical Memory: 16126 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ru' Physical Memory: 16126 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/Users/RacoonWork/Documents/GitHub/Lerning_Racoons_Game/Dragon_Game
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63956
+61796
 Successfully changed project path to: C:/Users/RacoonWork/Documents/GitHub/Lerning_Racoons_Game/Dragon_Game
 C:/Users/RacoonWork/Documents/GitHub/Lerning_Racoons_Game/Dragon_Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,14 +49,14 @@ C:/Users/RacoonWork/Documents/GitHub/Lerning_Racoons_Game/Dragon_Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [5060]  Target information:
+Player connection [16000]  Target information:
 
-Player connection [5060]  * "[IP] 192.168.31.57 [Port] 0 [Flags] 2 [Guid] 3702179209 [EditorId] 3702179209 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-N910JJC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [16000]  * "[IP] 192.168.7.76 [Port] 0 [Flags] 2 [Guid] 3984606719 [EditorId] 3984606719 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-N910JJC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [5060] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [5060] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16000] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16000] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 18.75 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 12.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.46f1 (8e9b8558c41a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/Resources/UnitySubsystems
@@ -72,46 +72,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.46f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009481 seconds.
-- Loaded All Assemblies, in  0.581 seconds
+Registered in 0.010127 seconds.
+- Loaded All Assemblies, in  0.717 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.476 seconds
-Domain Reload Profiling: 1056ms
-	BeginReloadAssembly (175ms)
+- Finished resetting the current domain, in  0.529 seconds
+Domain Reload Profiling: 1243ms
+	BeginReloadAssembly (193ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (89ms)
-	LoadAllAssembliesAndSetupDomain (244ms)
-		LoadAssemblies (172ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (126ms)
+	LoadAllAssembliesAndSetupDomain (309ms)
+		LoadAssemblies (191ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (240ms)
-			TypeCache.Refresh (238ms)
-				TypeCache.ScanAssembly (217ms)
+		AnalyzeDomain (306ms)
+			TypeCache.Refresh (303ms)
+				TypeCache.ScanAssembly (275ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (477ms)
+	FinalizeReload (529ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (398ms)
+		SetupLoadedEditorAssemblies (434ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (9ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (276ms)
-			ProcessInitializeOnLoadMethodAttributes (89ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (106ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,7 +120,7 @@ Domain Reload Profiling: 1056ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.789 seconds
+- Loaded All Assemblies, in  1.022 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -128,47 +128,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.820 seconds
-Domain Reload Profiling: 1608ms
-	BeginReloadAssembly (141ms)
+- Finished resetting the current domain, in  1.522 seconds
+Domain Reload Profiling: 2541ms
+	BeginReloadAssembly (245ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (567ms)
-		LoadAssemblies (420ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (634ms)
+		LoadAssemblies (503ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (220ms)
-			TypeCache.Refresh (195ms)
-				TypeCache.ScanAssembly (176ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (821ms)
+		AnalyzeDomain (272ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (208ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1523ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (667ms)
+		SetupLoadedEditorAssemblies (1255ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (526ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (1024ms)
+			ProcessInitializeOnLoadMethodAttributes (85ms)
+			AfterProcessingInitializeOnLoad (16ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 5.97 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 11.39 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4047 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (241.5 KB). Loaded Objects now: 4512.
-Memory consumption went from 141.1 MB to 140.9 MB.
-Total: 6.746600 ms (FindLiveObjects: 0.333600 ms CreateObjectMapping: 0.155700 ms MarkObjects: 6.019000 ms  DeleteObjects: 0.236800 ms)
+Unloading 4049 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (241.1 KB). Loaded Objects now: 4514.
+Memory consumption went from 141.3 MB to 141.0 MB.
+Total: 6.581300 ms (FindLiveObjects: 0.715500 ms CreateObjectMapping: 0.304100 ms MarkObjects: 5.278500 ms  DeleteObjects: 0.281300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -186,75 +186,65 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 511373.878040 seconds.
-  path: Assets/Sprites/HealthBar.png
-  artifactKey: Guid(2e5c71842b413f14ea57bf3e659b52bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/HealthBar.png using Guid(2e5c71842b413f14ea57bf3e659b52bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 326692.005316 seconds.
+  path: Assets/Prefabs/Projectiles/EnemyFireball.prefab
+  artifactKey: Guid(1ffb7a6baf0914f459e399eac3ef295c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Projectiles/EnemyFireball.prefab using Guid(1ffb7a6baf0914f459e399eac3ef295c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'd3c13938755c75066b65cd013b521f65') in 0.119184 seconds
+ -> (artifact id: '48dfd15cf8b681354a833a94322ae508') in 0.188059 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Sprites/РљРѕС‚РёРє1РЎС‚РѕР№РєР°-1.png.png
-  artifactKey: Guid(46322304f0a851a46bc988e1a67d50f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/РљРѕС‚РёРє1РЎС‚РѕР№РєР°-1.png.png using Guid(46322304f0a851a46bc988e1a67d50f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '7438e5ad966bcbf5ec30dfbaff06e1d7') in 0.026524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 34
 ========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.848 seconds
+- Loaded All Assemblies, in  0.757 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.994 seconds
-Domain Reload Profiling: 2843ms
-	BeginReloadAssembly (536ms)
+- Finished resetting the current domain, in  1.435 seconds
+Domain Reload Profiling: 2193ms
+	BeginReloadAssembly (459ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (375ms)
+		DisableScriptedObjects (304ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (34ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (239ms)
-		LoadAssemblies (318ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (297ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (13ms)
 			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (1996ms)
+	FinalizeReload (1437ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1697ms)
+		SetupLoadedEditorAssemblies (1215ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (151ms)
-			ProcessInitializeOnLoadAttributes (1427ms)
-			ProcessInitializeOnLoadMethodAttributes (98ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (1059ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (42ms)
-Refreshing native plugins compatible for Editor in 12.23 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (32ms)
+Refreshing native plugins compatible for Editor in 11.68 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4041 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (213.7 KB). Loaded Objects now: 4525.
-Memory consumption went from 144.5 MB to 144.3 MB.
-Total: 11.071700 ms (FindLiveObjects: 0.836800 ms CreateObjectMapping: 0.435600 ms MarkObjects: 9.041400 ms  DeleteObjects: 0.754800 ms)
+Unloading 4043 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (213.5 KB). Loaded Objects now: 4527.
+Memory consumption went from 144.7 MB to 144.5 MB.
+Total: 4.107200 ms (FindLiveObjects: 0.391700 ms CreateObjectMapping: 0.155500 ms MarkObjects: 3.359300 ms  DeleteObjects: 0.199200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -271,3 +261,317 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 30.826357 seconds.
+  path: Assets/Prefabs/Enemy/EnemyPatrolRange.prefab
+  artifactKey: Guid(e4b50bad66d282444ba66e75df10f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/EnemyPatrolRange.prefab using Guid(e4b50bad66d282444ba66e75df10f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd8be65b75e8c68d21fd4324ebf72514d') in 0.002986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  7.303 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 32.429 seconds
+Domain Reload Profiling: 39728ms
+	BeginReloadAssembly (250ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (25ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (352ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (6624ms)
+		LoadAssemblies (6714ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (32431ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1423ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (1204ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 12.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4043 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (213.3 KB). Loaded Objects now: 4531.
+Memory consumption went from 144.7 MB to 144.5 MB.
+Total: 9.660000 ms (FindLiveObjects: 0.766400 ms CreateObjectMapping: 0.461300 ms MarkObjects: 7.967900 ms  DeleteObjects: 0.461300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 279.489959 seconds.
+  path: Assets/Prefabs/Player/Player Variant.prefab
+  artifactKey: Guid(05a0903c72c34d047b722c990694e292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player Variant.prefab using Guid(05a0903c72c34d047b722c990694e292) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a5daaa2df2501f6ca5decce101a4f447') in 0.004679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.502 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.828 seconds
+Domain Reload Profiling: 2328ms
+	BeginReloadAssembly (164ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (252ms)
+		LoadAssemblies (319ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1829ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1240ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (1027ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 10.19 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4043 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (213.5 KB). Loaded Objects now: 4535.
+Memory consumption went from 144.7 MB to 144.5 MB.
+Total: 8.270300 ms (FindLiveObjects: 0.393700 ms CreateObjectMapping: 0.371000 ms MarkObjects: 7.100900 ms  DeleteObjects: 0.400200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 99.840938 seconds.
+  path: Assets/Prefabs/Player/Player Variant.prefab
+  artifactKey: Guid(05a0903c72c34d047b722c990694e292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player Variant.prefab using Guid(05a0903c72c34d047b722c990694e292) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a5daaa2df2501f6ca5decce101a4f447') in 0.002261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 29.087844 seconds.
+  path: Assets/Prefabs/Player/Player.prefab
+  artifactKey: Guid(fcdd70bf1fbe9e040af6e87c5c1264f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player.prefab using Guid(fcdd70bf1fbe9e040af6e87c5c1264f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0105d586aff2ce150c37ad08fad66fed') in 0.001203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 28.561797 seconds.
+  path: Assets/Prefabs/Player/Player.prefab
+  artifactKey: Guid(fcdd70bf1fbe9e040af6e87c5c1264f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player.prefab using Guid(fcdd70bf1fbe9e040af6e87c5c1264f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0463a91643ccd5a445ce40266a45a451') in 0.001091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 78.879217 seconds.
+  path: Assets/Sprites/Pixel Adventure 1/Assets/Main Characters/Pink Man/Jump (32x32).png
+  artifactKey: Guid(2133d8551a302aa4caac9061f5d0c0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Adventure 1/Assets/Main Characters/Pink Man/Jump (32x32).png using Guid(2133d8551a302aa4caac9061f5d0c0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '89ef74b50a8ca3558cae86c78b7c4b61') in 0.092851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.966851 seconds.
+  path: Assets/Sprites/Pixel Adventure 1/Assets/Other/Dust Particle.png
+  artifactKey: Guid(10dad2dda4fbd0c49bfd7b4344ccaac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Adventure 1/Assets/Other/Dust Particle.png using Guid(10dad2dda4fbd0c49bfd7b4344ccaac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0f7011b96bad56638579200e441e6ad8') in 0.021754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 89.695559 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/crouch_02.png
+  artifactKey: Guid(4712c1ad024e03b4c97cf0683831cff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/crouch_02.png using Guid(4712c1ad024e03b4c97cf0683831cff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b560663a7ea2b8003bd8147a599be94c') in 0.024069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/crouch_ATK_02.png
+  artifactKey: Guid(629e63a13f5fdc0479184fc58e22bb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/crouch_ATK_02.png using Guid(629e63a13f5fdc0479184fc58e22bb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c450d6741c15b8b2a775f3456cc1b6e9') in 0.021188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.015326 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/die_002.png
+  artifactKey: Guid(c96b02b971b0a4243881a4f47f4d3179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/die_002.png using Guid(c96b02b971b0a4243881a4f47f4d3179) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '288ab588d081d918ff8305b8f857140b') in 0.023730 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/die_008.png
+  artifactKey: Guid(e5e0c75a3ed008442be94f5946f15929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/die_008.png using Guid(e5e0c75a3ed008442be94f5946f15929) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3d7700f1bce3df78f39185dfd066bea0') in 0.020331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/die_005.png
+  artifactKey: Guid(57a5401a8028e9847bdaf9dca66842ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/die_005.png using Guid(57a5401a8028e9847bdaf9dca66842ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'af2bae87c0666efaaf935dc53782c1e9') in 0.020606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/dizzy_02.png
+  artifactKey: Guid(99b9eb4aa031cd34b8c4bc76201f84a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/dizzy_02.png using Guid(99b9eb4aa031cd34b8c4bc76201f84a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9b78f66640b5f936ab3db16b556b6bf6') in 0.023331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/die_010.png
+  artifactKey: Guid(ee54785c109c1014c87115db62440046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/die_010.png using Guid(ee54785c109c1014c87115db62440046) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '68573d44741d1bdc8c03407b2ab293f5') in 0.021091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/die_004.png
+  artifactKey: Guid(0d77f73d4d99df547aa70ffcb58767a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/die_004.png using Guid(0d77f73d4d99df547aa70ffcb58767a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9bda9455c99109f53392ba30a75380e0') in 0.022283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/die_001.png
+  artifactKey: Guid(78cb51b531ddb89419c7fa611c7098dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/die_001.png using Guid(78cb51b531ddb89419c7fa611c7098dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b5e6f3eb0c89e62fbdbc7c887b80db20') in 0.017304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.022647 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/jump_02.png
+  artifactKey: Guid(d2df597a04a76de4a96a4c5e9a6f0ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/jump_02.png using Guid(d2df597a04a76de4a96a4c5e9a6f0ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3adcd6fb1de7b2cec6edb78032ba0182') in 0.033122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Dragon Warrior Files/Dragon Warrior PNG/jumpATK_02.png
+  artifactKey: Guid(c0ce46792cbd15b448935b4e757cbc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon Warrior Files/Dragon Warrior PNG/jumpATK_02.png using Guid(c0ce46792cbd15b448935b4e757cbc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '63725b4ef9708784f8e7b1d4f4955d54') in 0.025583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Операция ввода/вывода была прервана из-за завершения потока команд или по запросу приложения.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
