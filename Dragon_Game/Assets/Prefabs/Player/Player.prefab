@@ -255,7 +255,7 @@ MonoBehaviour:
   - {fileID: 6922332110338980217}
   - {fileID: 7417108699639716535}
   deathSound: {fileID: 8300000, guid: dd6d9531e2f11434f9add7e7e09cd332, type: 3}
-  hurtSound: {fileID: 8300000, guid: 6979d52fda0579441a2122b95abaf337, type: 3}
+  hurtSound: {fileID: 8300000, guid: 32ff513695816ae4fb9ecd5c1bc67120, type: 3}
 --- !u!114 &1967018925800746438
 MonoBehaviour:
   m_ObjectHideFlags: 0
