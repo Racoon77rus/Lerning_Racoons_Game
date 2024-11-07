@@ -35,22 +35,23 @@ public class Health : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            SoundManager.instance.PlaySound(hurtSound);
             anim.SetTrigger("hurt");
             StartCoroutine(Invunerability());
+            SoundManager.instance.PlaySound(hurtSound);
         }
         else
         {
             if (!dead)
             {
-                SoundManager.instance.PlaySound(deathSound);
-                anim.SetTrigger("die");
-
                 //Deactivate all attached component classes
                 foreach (Behaviour component in components)
                     component.enabled = false;
 
+                anim.SetBool("grounded", true);
+                anim.SetTrigger("die");
+
                 dead = true;
+                SoundManager.instance.PlaySound(deathSound);
             }
         }
     }
@@ -72,9 +73,22 @@ public class Health : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 11, false);
         invulnerable = false;
     }
-
     private void Deactivate()
     {
         gameObject.SetActive(false);
+    }
+
+    //Respawn
+    public void Respawn()
+    {
+        dead = false;
+        AddHealth(startingHealth);
+        anim.ResetTrigger("die");
+        anim.Play("Idle");
+        StartCoroutine(Invunerability());
+
+        //Activate all attached component classes
+        foreach (Behaviour component in components)
+            component.enabled = true;
     }
 }
