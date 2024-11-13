@@ -7,18 +7,19 @@ TagManager:
   - Enemy
   - Ground
   - Checkpoint
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Boundaries
   - Water
   - UI
   - Player
   - Ground
   - Wall
   - Enemy
-  - 
+  - MovingPlatform
   - 
   - 
   - 

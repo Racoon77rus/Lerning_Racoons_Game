@@ -30,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
-
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
@@ -134,5 +133,21 @@ public class PlayerMovement : MonoBehaviour
     public bool canAttack()
     {
         return horizontalInput == 0 && isGrounded() && !onWall();
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("MovingPlatform"))
+        {
+            this.transform.parent = collision.transform;
+        }
+    }
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("MovingPlatform"))
+        {
+            // Отсоединяем игрока от платформы
+            this.transform.parent = null;
+        }
     }
 }
