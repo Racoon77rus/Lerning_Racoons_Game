@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Multiple Jumps")]
     [SerializeField] private int extraJumps;
-    private int jumpCounter;
+    public int jumpCounter;
 
     [Header("Wall Jumping")]
     [SerializeField] private float wallJumpX; //Horizontal wall jump force
@@ -30,13 +30,28 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+
+    public Vector3 initialPosition; // Начальная позиция игрока
+    private Stamina stamina; // Ссылка на компонент Stamina
+    public static PlayerMovement instance; // Статическая ссылка на игрока
+
+    public static class PlayerPosition
+    {
+        // Статическое свойство для хранения позиции игрока
+        public static Vector3 Position { get; set; }
+    }
     private void Awake()
     {
         //Grab references for rigidbody and animator from object
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        // Сохраняем начальную позицию в начале игры
+        initialPosition = transform.position;
+        stamina = GetComponent<Stamina>(); // Получаем компонент Stamina
+        instance = this; // Инициализация ссылки на игрока
     }
+
 
     private void Update()
     {
@@ -80,10 +95,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
     private void Jump()
     {
         if (coyoteCounter <= 0 && !onWall() && jumpCounter <= 0) return;
-        //If coyote counter is 0 or less and not on the wall and don't have any extra jumps don't do anything
 
         SoundManager.instance.PlaySound(jumpSound);
 
@@ -95,19 +110,21 @@ public class PlayerMovement : MonoBehaviour
                 body.velocity = new Vector2(body.velocity.x, jumpPower);
             else
             {
-                //If not on the ground and coyote counter bigger than 0 do a normal jump
                 if (coyoteCounter > 0)
                     body.velocity = new Vector2(body.velocity.x, jumpPower);
                 else
                 {
-                    if (jumpCounter > 0) //If we have extra jumps then jump and decrease the jump counter
+                    if (jumpCounter > 0) // Проверяем, достаточно ли стамины для двойного прыжка
                     {
-                        body.velocity = new Vector2(body.velocity.x, jumpPower);
-                        jumpCounter--;
+                        if (stamina.currentStamina >= stamina.jumpStaminaCost) // Проверка на наличие стамины
+                        {
+                            body.velocity = new Vector2(body.velocity.x, jumpPower);
+                            jumpCounter--;
+                            stamina.UseStamina(stamina.jumpStaminaCost); // Используем стамину
+                        }
                     }
                 }
             }
-
             //Reset coyote counter to 0 to avoid double jumps
             coyoteCounter = 0;
         }
@@ -150,4 +167,5 @@ public class PlayerMovement : MonoBehaviour
             this.transform.parent = null;
         }
     }
+
 }

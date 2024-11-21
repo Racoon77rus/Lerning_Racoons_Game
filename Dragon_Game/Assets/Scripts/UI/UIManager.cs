@@ -76,4 +76,17 @@ public class UIManager : MonoBehaviour
     }
     #endregion
 
+    #region Main Menu
+    //Функции
+
+    public void LevelSelect()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void NewGame()
+    {
+        SceneManager.LoadScene(2);
+    }
+    #endregion
+
 }

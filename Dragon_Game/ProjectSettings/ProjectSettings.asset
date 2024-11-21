@@ -233,6 +233,7 @@ PlayerSettings:
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1
   metalAPIValidation: 1
+  metalCompileShaderBinary: 0
   iOSRenderExtraFrameOnPause: 0
   iosCopyPluginsCodeInsteadOfSymlink: 0
   appleDeveloperTeamID: 
@@ -689,7 +690,8 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: USING_URP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -797,10 +799,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 8d0fd83a-11ef-471a-af2f-158972b114a9
+  cloudProjectId: d79b4c23-e73c-47f0-b832-2744502c4c4a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Dragon_Game 2024-11-13_18-37-27
+  projectName: Dragon_Game
   organizationId: racoon07-mail-ru
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

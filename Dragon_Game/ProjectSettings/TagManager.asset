@@ -8,6 +8,11 @@ TagManager:
   - Ground
   - Checkpoint
   - MovingPlatform
+  - LevelDoor
+  - LevelDoorRandom
+  - MeleeRadius
+  - StaminaPotion
+  - Chest
   layers:
   - Default
   - TransparentFX
@@ -50,4 +55,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3826677279
+    locked: 0
+  - name: Front
+    uniqueID: 1336971933
     locked: 0
